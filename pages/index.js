@@ -1,19 +1,23 @@
-import React from 'react'
-import Head from 'next/head'
-import Nav from '../components/nav'
+import React from "stilren/react";
+import Head from "next/head";
+import Nav from "../components/nav";
 
 const Home = () => (
   <div>
-    <Head>
-      <title>Home</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
-
     <Nav />
 
-    <div className="hero">
-      <h1 className="title">Welcome to Next.js!</h1>
-      <p className="description">
+    <div $width="100%" $color="#333">
+      <h1
+        $margin="0"
+        $width="100%"
+        $paddingTop="80px"
+        $lineHeight="1.15"
+        $fontSize="48px"
+        $textAlign="center"
+      >
+        Welcome to Next.js!
+      </h1>
+      <p $textAlign="center">
         To get started, edit <code>pages/index.js</code> and save to reload.
       </p>
 
@@ -83,6 +87,6 @@ const Home = () => (
       }
     `}</style>
   </div>
-)
+);
 
-export default Home
+export default Home;
