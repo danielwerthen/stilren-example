@@ -1,56 +1,41 @@
-import React from 'react'
-import Link from 'next/link'
+import React from "stilren/react";
+import Link from "next/link";
 
 const links = [
-  { href: 'https://zeit.co/now', label: 'ZEIT' },
-  { href: 'https://github.com/zeit/next.js', label: 'GitHub' },
+  { href: "https://zeit.co/now", label: "ZEIT" },
+  { href: "https://github.com/zeit/next.js", label: "GitHub" }
 ].map(link => {
-  link.key = `nav-link-${link.href}-${link.label}`
-  return link
-})
+  link.key = `nav-link-${link.href}-${link.label}`;
+  return link;
+});
+
+const Anchor = React.forwardRef((props, ref) => {
+  return (
+    <a
+      $color="#067df7"
+      $textDecoration="none"
+      $fontSize="13px"
+      {...props}
+      ref={ref}
+    />
+  );
+});
 
 const Nav = () => (
   <nav>
-    <ul>
-      <li>
+    <ul $display="flex" $justifyContent="space-between">
+      <li $display="flex">
         <Link href="/">
-          <a>Home</a>
+          <Anchor>Home</Anchor>
         </Link>
       </li>
       {links.map(({ key, href, label }) => (
-        <li key={key}>
-          <a href={href}>{label}</a>
+        <li key={key} $display="flex">
+          <Anchor href={href}>{label}</Anchor>
         </li>
       ))}
     </ul>
-
-    <style jsx>{`
-      :global(body) {
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
-          Helvetica, sans-serif;
-      }
-      nav {
-        text-align: center;
-      }
-      ul {
-        display: flex;
-        justify-content: space-between;
-      }
-      nav > ul {
-        padding: 4px 16px;
-      }
-      li {
-        display: flex;
-        padding: 6px 8px;
-      }
-      a {
-        color: #067df7;
-        text-decoration: none;
-        font-size: 13px;
-      }
-    `}</style>
   </nav>
-)
+);
 
-export default Nav
+export default Nav;

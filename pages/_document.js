@@ -42,6 +42,13 @@ class MyDocument extends Document {
               key={i}
             />
           ))}
+          <style
+            dangerouslySetInnerHTML={{
+              __html: `
+            body { font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir, Helvetica, sans-serif;}
+            `
+            }}
+          />
         </Head>
         <body>
           <Main />
