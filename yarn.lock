@@ -5169,10 +5169,10 @@ static-extend@^0.1.1:
   resolved "https://registry.yarnpkg.com/statuses/-/statuses-1.5.0.tgz#161c7dac177659fd9811f43771fa99381478628c"
   integrity sha1-Fhx9rBd2Wf2YEfQ3cfqZOBR4Yow=
 
-stilren@0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/stilren/-/stilren-0.0.5.tgz#fe0b82a39a95cf66a21d65f712c9efb2d9000007"
-  integrity sha512-wyRKhTEICpyYrjE/w4jjxkk1FqKeyPGrkNzyk/+V4aFM9IQvp82cX8cLX4b0F85wZzChvqKi5O4MTq/DQ7VYaA==
+stilren@0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/stilren/-/stilren-0.0.6.tgz#969b257d15e6e245cf16e9ac2dfff9cded22db97"
+  integrity sha512-55J5wbrOn8r1fUTIoztSHRmBazcmQAV9tBg2kLbbXQqHs2wgNcL8XOve/iWtDkbBBpSNmRzNnXHdWIXrJdsGPg==
   dependencies:
     prop-types "*"
 
@@ -5398,9 +5398,9 @@ terser@4.0.0:
     source-map-support "~0.5.10"
 
 terser@^4.1.2:
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/terser/-/terser-4.4.0.tgz#22c46b4817cf4c9565434bfe6ad47336af259ac3"
-  integrity sha512-oDG16n2WKm27JO8h4y/w3iqBGAOSCtq7k8dRmrn4Wf9NouL0b2WpMHGChFGZq4nFAQy1FsNJrVQHfurXOSTmOA==
+  version "4.4.1"
+  resolved "https://registry.yarnpkg.com/terser/-/terser-4.4.1.tgz#f3a469c125d9a0eb52f1e6a7fdff587bd6e35902"
+  integrity sha512-e05giplw+8sIYh50qXYHZmr0b76O5dOSm9JwSDebGFLri4ItYzxsnumiAK+yuI56R+H7uIjT9KbVEKNkrprzHw==
   dependencies:
     commander "^2.20.0"
     source-map "~0.6.1"

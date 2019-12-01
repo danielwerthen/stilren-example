@@ -18,6 +18,10 @@ function Card(props) {
 
 const Home = () => (
   <div>
+    <Head>
+      <title>Home</title>
+      <link rel="icon" href="/favicon.ico" />
+    </Head>
     <Nav />
 
     <div $width="100%" $color="#333">
