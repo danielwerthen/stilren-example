@@ -2,7 +2,7 @@ import Document, { Head, Main, NextScript } from "next/document";
 import { Provider as StyletronProvider } from "styletron-react";
 import { styletron } from "../utils/styletron";
 import { StilrenProvider } from "stilren/react";
-import { ServerStyleSheets } from "@material-ui/core";
+import { ServerStyleSheets } from "@material-ui/core/styles";
 
 const pseudos = ["hover", "focus"];
 const breakpoints = {
@@ -45,7 +45,7 @@ class MyDocument extends Document {
           <style
             dangerouslySetInnerHTML={{
               __html: `
-            body { font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir, Helvetica, sans-serif;}
+            body { font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir, Helvetica, sans-serif; margin: 0; }
             `
             }}
           />
